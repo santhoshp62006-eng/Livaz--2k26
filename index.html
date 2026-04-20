@@ -192,6 +192,53 @@
             gap: 0.75rem;
         }
     }
+   <style>
+  .hackathon-ticker-wrapper {
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0;
+    font-weight: 600;
+    font-size: 0.95rem;
+    /* No background, no border */
+    background: transparent;
+    border: none;
+  }
+
+  .hackathon-ticker-wrapper {
+  width: 100%;
+  overflow: hidden;
+  padding: 6px 0;
+  font-weight: 800;
+  font-size: 1rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #facc15;           /* bright yellow */
+  text-align: center;
+  background: transparent;  /* still no background */
+  border: none;
+}
+
+.hackathon-ticker-track {
+  display: inline-block;
+  white-space: nowrap;
+  /* slow left → right movement + glow pulse */
+  animation: hackathon-train 20s linear infinite,
+             hackathon-glow 1.4s ease-in-out infinite;
+}
+
+/* movement: left to right */
+
+  @keyframes hackathon-train {
+  0% {
+    /* text starts with its left edge at the left edge of the screen */
+    transform: translateX(0);
+  }
+  100% {
+    /* text ends with its right edge at the right edge of the screen */
+    transform: translateX(calc(100vw - 100%));
+  }
+}
+</style>
     </style>
 </head>
 <body class="bg-[#030303] text-gray-100 selection:bg-violet-500 selection:text-white">
@@ -245,6 +292,17 @@
                      class="relative z-10 h-28 md:h-48 lg:h-64 object-contain transition-transform duration-500 hover:scale-110"
                      onerror="this.style.display='none';">
             </div>
+          <div class="hackathon-ticker-wrapper">
+  <a
+    href="https://docs.google.com/forms/d/e/1FAIpQLSeZheVqpEc1Nq9zxMW3LwIg3rPYZqVitWy2Kijs6aQqwtOpBw/viewform"
+    target="_blank"
+    class="hackathon-ticker-link"
+  >
+    <div class="hackathon-ticker-track">
+      ONLINE HACKATHON IS LIVE NOW • PROBLEM STATEMENTS ARE RELEASED • START BUILDING YOUR SOLUTION • ONLINE HACKATHON IS LIVE NOW • PROBLEM STATEMENTS ARE RELEASED •
+    </div>
+  </a>
+</div>
 
             <p class="text-white text-lg md:text-2xl font-light tracking-widest mb-1 uppercase">
                 Engineered Minds, Electrified Future.
@@ -305,6 +363,13 @@
                     </svg>
                     Join WhatsApp
                 </a>
+                <a
+    href="oh ps.pdf"
+    target="_blank"
+    class="border border-violet-500 hover:bg-violet-600 hover:border-violet-500 text-white px-6 md:px-8 py-3.5 rounded-full font-semibold text-xs md:text-sm transition-all duration-300"
+  >
+    Online Hackathon – Problem Statements
+  </a>
             </div>
         </div>
     </header>
@@ -655,7 +720,7 @@
             <div class="flex justify-center mt-10 md:mt-16">
                 <button
                     class="w-28 h-28 md:w-32 md:h-32 rounded-2xl bg-violet-600 text-white text-2xl md:text-[35px] font-bold uppercase tracking-widest border border-white/20 shadow-2xl hover:bg-violet-500 hover:scale-110 transition-all duration-300 flex flex-col items-center justify-center text-center px-2 leading-tight cursor-pointer"
-                    onclick="event.stopPropagation(); window.open('rules.pdf', '_blank')">
+                    onclick="event.stopPropagation(); window.open('rules1.pdf', '_blank')">
                     <span>Rule</span>
                     <span>Book</span>
                 </button>
@@ -879,7 +944,7 @@
                             <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/5 pb-3 gap-1">
                                 <span class="text-white text-sm md:text-base font-semibold tracking-wide">PRAJWAL G</span>
                                 <a href="tel:+917619146615" class="text-gray-400 hover:text-violet-400 transition-colors cursor-pointer text-sm md:text-base">
-                                    7619146615
+                                    9360147054
                                 </a>
                             </li>
                             <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-white/5 pb-3 gap-1">
