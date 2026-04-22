@@ -968,33 +968,28 @@
             </div>
         </div>
 
-      <div class="mt-24 pb-12 flex items-center justify-center gap-4">
-    <!-- Pulsing Status Dot (Hidden on small screens to keep focus on photo) -->
-    <span class="relative hidden sm:flex h-2 w-2">
-        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
-        <span class="relative inline-flex rounded-full h-2 w-2 bg-white/80"></span>
-    </span>
-
+      <div class="mt-24 pb-12 flex items-center justify-center gap-3">
     <!-- Main Container -->
     <a href="https://www.instagram.com/isanthoshperumal?igsh=b3JzZWpqd3JzNTRs" 
        target="_blank" 
-       class="group flex items-center gap-3 text-[11px] md:text-sm tracking-[0.2em] uppercase text-gray-500 hover:text-gray-300 transition-all duration-300">
+       class="group flex items-center gap-2 text-[10px] sm:text-xs md:text-sm tracking-[0.15em] sm:tracking-[0.2em] uppercase text-gray-500 hover:text-gray-300 transition-all duration-300">
         
-        <span class="hidden md:inline">Design & Dev by</span>
+        <!-- Text visible on ALL screens -->
+        <span class="whitespace-nowrap">Design & Dev by</span>
 
         <!-- LARGER PHOTO WITH GRADIENT RING -->
-        <div class="relative p-[2px] rounded-full bg-gradient-to-tr from-blue-400 via-purple-500 to-pink-500 animate-gradient-x">
-            <div class="bg-black rounded-full p-[2px]">
+        <div class="relative shrink-0 p-[1.5px] rounded-full bg-gradient-to-tr from-blue-400 via-purple-500 to-pink-500 animate-gradient-x">
+            <div class="bg-black rounded-full p-[1px]">
                 <img src="san.jpeg" 
                      alt="Santhosh_P" 
-                     class="h-10 w-10 md:h-12 md:w-12 rounded-full object-cover transition-transform duration-500 group-hover:scale-110">
+                     class="h-8 w-8 sm:h-10 sm:w-10 rounded-full object-cover transition-transform duration-500 group-hover:scale-110">
             </div>
-            <!-- Glow Effect on Hover -->
-            <div class="absolute inset-0 rounded-full group-hover:shadow-[0_0_20px_rgba(168,85,247,0.6)] transition-shadow duration-500"></div>
+            <!-- Glow Effect -->
+            <div class="absolute inset-0 rounded-full group-hover:shadow-[0_0_15px_rgba(168,85,247,0.5)] transition-shadow duration-500"></div>
         </div>
 
         <!-- Animated Name -->
-        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-x group-hover:from-cyan-400 group-hover:to-blue-600">
+        <span class="font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 bg-[length:200%_auto] animate-gradient-x group-hover:brightness-110 whitespace-nowrap">
             Santhosh_P
         </span>
     </a>
